@@ -15,6 +15,7 @@ export function Sheet() {
             <input
               className="border border-gray-400 my-8"
               placeholder="Input"
+              autoFocus
             />
             <p>
               But I must explain to you how all this mistaken idea of denouncing
