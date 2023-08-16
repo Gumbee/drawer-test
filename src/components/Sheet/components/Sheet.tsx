@@ -12,7 +12,7 @@ const Sheet: FC<PropsWithChildren<SheetProps>> = ({
   onClose,
 }) => {
   const handleChange = useCallback(
-    (o) => {
+    (o: boolean) => {
       if (!o) {
         onClose?.();
       }
