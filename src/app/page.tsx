@@ -34,10 +34,18 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <button onClick={setOpenA}>Open Drawer A</button>
-      <button onClick={setOpenB}>Open Drawer B</button>
-      {open && <Sheet onClose={closeSheet}>{currentContent?.component}</Sheet>}
-    </main>
+    <>
+      <main
+        vaul-drawer-wrapper=""
+        className="flex min-h-screen flex-col items-center justify-between p-24 bg-white"
+      >
+        <button onClick={setOpenA}>Open Drawer A</button>
+        <button onClick={setOpenB}>Open Drawer B</button>
+      </main>
+
+      <Sheet open={open} onClose={closeSheet}>
+        {currentContent?.component}
+      </Sheet>
+    </>
   );
 }
