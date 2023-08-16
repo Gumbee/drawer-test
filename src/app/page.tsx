@@ -19,10 +19,15 @@ export default function Home() {
       id: "gewgw",
       component: (
         <div className="mt-[20px]">
+          <input placeholder="X" />
           <div className="h-[200px] bg-red-400" />
+          <input placeholder="A" />
           <div className="h-[200px] bg-blue-400" />
+          <input placeholder="B" />
           <div className="h-[200px] bg-green-400" />
+          <input placeholder="C" />
           <div className="h-[200px] bg-purple-400" />
+          <input placeholder="D" />
         </div>
       ),
     });
